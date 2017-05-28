@@ -10,8 +10,11 @@ public class Main {
 		Bathroom theBathroom = new Bathroom("jacuzzi");
 		
 		Build house = new Build(theKitchen, theDen, theBedroom, theBathroom);
-		
+		 
+		// calls public method which calls private method which accesses data 
 		house.privateDetails("roomInfo");
+		
+		// call getters
 		String denSeating = theDen.getSeating();
 		System.out.println("Den Seating: " + denSeating);
 		System.out.println("Number of Bedrooms: " + theBedroom.getNumberOfBedrooms());
