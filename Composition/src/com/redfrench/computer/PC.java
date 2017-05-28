@@ -1,4 +1,4 @@
-package com.redfrench;
+package com.redfrench.computer;
 
 public class PC {
 	
