@@ -15,14 +15,19 @@ public class PC {
 	}
 	
 	
-	public Case getTheCase() {
-		return theCase;
+	public void powerUp() {
+		theCase.pressPwrBtn();
+		drawLogo();
+		loadProgram();
 	}
-	public Monitor getMonitor() {
-		return monitor;
+
+
+	private void drawLogo() {
+		monitor.drawPixelAt(1500, 1200, "red");
 	}
-	public Motherboard getMotherboard() {
-		return motherboard;
+	
+	private void loadProgram() {
+		motherboard.loadProgram("Windows 1.0");
 	}
 	
 }
