@@ -9,7 +9,7 @@ Composition takes care of this.
     With composition, you bring into a class other classes that make up that class.  An example would be class PC which uses composition for class Case, class Monitor, and class Motherboard to build the PC computer.
 
 ex:
-`
+```
     public class PC {
 
     // the PC has class Case, class Monitor, and class Motherboard which make up this PC class
@@ -33,4 +33,4 @@ ex:
         return motherboard;
     }
 
-}`
+}```
